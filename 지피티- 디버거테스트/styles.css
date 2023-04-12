@@ -1,0 +1,70 @@
+/* 전체 스타일 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 타이틀 바 */
+.title-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  -webkit-app-region: drag; /* 드래그 영역 지정 */
+  background-color: #1c1e22;
+}
+
+.title-bar-draggable {
+  display: inline-block;
+  height: 100%;
+  padding-left: 10px;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* 타이틀 바 컨트롤 버튼 */
+.title-bar-controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.title-bar-controls button {
+  width: 36px;
+  height: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-app-region: no-drag; /* 드래그 불가능 지정 */
+}
+
+.title-bar-controls button img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  transition: opacity 0.3s;
+}
+
+.title-bar-controls button img:hover {
+  opacity: 1;
+}
+
+/* 컨텐츠 */
+.container {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  background-color: #f1f1f1;
+  overflow: auto;
+}
