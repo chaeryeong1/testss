@@ -1,0 +1,16 @@
+{
+  "name": "D-BUGGER",
+  "productName": "D-BUGGER",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "S5",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "20.1.4"
+  }
+}
