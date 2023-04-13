@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>D-BUGGER</title>
+    <!--디버거 기본 라이브러리-->
+    <link rel="stylesheet" href="styles.css ">
+    
+    <!-- 제이쿼리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/your_kit_code.js" crossorigin="anonymous"></script>
+
+  <!-- 테일윈드 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+
+  <!--애니메이션,와우-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  </head>
+
+  <body>
+    <section class="main-app">
+      
+       <div id="app">
+      <div id="title-bar">
+        <button id="logo">
+          <img src="./images/icon/logo.png" alt="logo">
+        </button>
+        <div class="title-blank"></div>
+        <button id="alarm">
+          <img src="./images/icon/alarm_logo.png" alt="-_icon">
+        </button>
+        <button id="setting">
+          <img src="./images/icon/setting_icon.png" alt="-_icon">
+        </button>
+        <button id="minimize">
+          <img src="./images/icon/-_icon.png" alt="-_icon">
+        </button>
+        <button id="maximize">
+          <img src="./images/icon/max_icon.png" alt="max_icon">
+        </button>
+        <button id="close">
+          <img src="./images/icon/x_icon.png" alt="x_icon">
+        </button>
+      </div>
+      <div id="content" class="text-lg font-bold pl-2 pt-2">
+        디버거 테스트 우왕~~~~~~~~~~~~~~~햇당~~~~~~~~
+      </div>
+    </div>
+    </section>
+    
+    <!-- 렌더러 스크립트 연결 -->
+    <script src="renderer.js"></script>
+  </body>
+</html>
